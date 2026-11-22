@@ -3,6 +3,11 @@
 
 #include "common.h"
 
+#include <cstdint>
+#include <optional>
+#include <string>
+#include <vector>
+
 namespace mdbg {
 
 struct ProcessInfo {
