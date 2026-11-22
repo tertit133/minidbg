@@ -85,7 +85,7 @@ set(IMGUI_SOURCES
 # ---- minidbg executable ----------------------------------------------------
 add_executable(minidbg WIN32
     src/main.cpp
-    src/process.cpp
+    src/procmgr.cpp
     src/disasm.cpp
     src/breakpoint.cpp
     src/hwbreakpoint.cpp

@@ -1,4 +1,6 @@
-// process.h — process enumeration, launch (debug), attach
+// procmgr.h -- process enumeration, launch (debug), attach
+// (renamed from process.h to avoid colliding with the Windows SDK
+//  <process.h> that the MSVC <thread> header pulls in for _beginthreadex)
 #pragma once
 
 #include "common.h"

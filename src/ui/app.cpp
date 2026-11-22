@@ -4,6 +4,7 @@
 #include "views.h"
 
 #include "imgui.h"
+#include "imgui_internal.h"   // DockBuilder* API lives here
 #include "imgui_impl_dx11.h"
 #include "imgui_impl_win32.h"
 

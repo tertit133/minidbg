@@ -8,7 +8,7 @@
 #include "disasm.h"
 #include "hwbreakpoint.h"
 #include "pe.h"
-#include "process.h"
+#include "procmgr.h"
 #include "scripting.h"
 #include "symbols.h"
 
