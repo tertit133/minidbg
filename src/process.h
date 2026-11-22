@@ -3,19 +3,14 @@
 
 #include "common.h"
 
-#include <cstdint>
-#include <optional>
-#include <string>
-#include <vector>
-
 namespace mdbg {
 
 struct ProcessInfo {
-    DWORD        pid{};
-    HANDLE       process{};       // may be filled in later by CREATE_PROCESS_DEBUG_EVENT
-    HANDLE       mainThread{};
-    Address      imageBase{};
-    std::wstring imagePath;
+    DWORD            pid{};
+    HANDLE           process{};       // may be filled in later by CREATE_PROCESS_DEBUG_EVENT
+    HANDLE           mainThread{};
+    std::uintptr_t   imageBase{};
+    std::wstring     imagePath;
 };
 
 class ProcessList {
