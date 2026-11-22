@@ -1,9 +1,11 @@
 // common.h — shared types, Windows includes, utility helpers
 #pragma once
 
+#include <algorithm>
 #include <atomic>
 #include <condition_variable>
 #include <cstdint>
+#include <cstdio>
 #include <functional>
 #include <map>
 #include <memory>

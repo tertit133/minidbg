@@ -4,6 +4,8 @@
 #include "common.h"
 #include "debugger.h"
 
+#include "imgui.h"
+
 #include <d3d11.h>
 
 namespace mdbg::ui {
