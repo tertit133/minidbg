@@ -1,0 +1,17 @@
+build/
+out/
+.vs/
+.vscode/
+.idea/
+*.user
+CMakeSettings.json
+*.pdb
+*.exe
+*.obj
+*.ilk
+
+# macOS
+.DS_Store
+
+# Runtime
+imgui.ini
