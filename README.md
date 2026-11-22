@@ -18,14 +18,6 @@ ImGui + DX11 UI · Zydis disassembler · DbgHelp with symsrv · Lua 5.4 scriptin
 > loop, software + hardware breakpoints, x64 unwinding, PE parsing,
 > symbol resolution and an embedded scripting engine.
 
-## Screenshots
-
-> Add images under `docs/screenshots/` and they will render here:
->
-> `![overview](docs/screenshots/overview.png)`
-> `![call-stack](docs/screenshots/callstack.png)`
-> `![lua-pane](docs/screenshots/lua.png)`
-
 ## Features
 
 Shipped:
