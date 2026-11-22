@@ -1,6 +1,19 @@
 // common.h — shared types, Windows includes, utility helpers
 #pragma once
 
+// Windows headers must come before the C++ stdlib so that stdlib headers
+// using the Win32 synchronization primitives (<thread>, <mutex>, …) see a
+// fully-populated <windows.h> on first use. Including the stdlib first
+// causes MSVC to short-circuit later <windows.h> inclusion and leaves
+// DWORD / HANDLE undeclared throughout the rest of the TU.
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
+#include <windows.h>
+
 #include <algorithm>
 #include <atomic>
 #include <condition_variable>
@@ -15,14 +28,6 @@
 #include <string>
 #include <thread>
 #include <vector>
-
-#ifndef WIN32_LEAN_AND_MEAN
-#define WIN32_LEAN_AND_MEAN
-#endif
-#ifndef NOMINMAX
-#define NOMINMAX
-#endif
-#include <windows.h>
 
 namespace mdbg {
 
